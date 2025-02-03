@@ -15,7 +15,7 @@ const BuyCredit = () => {
 
   const initpay = async (order)=>{
      const options = {
-      key: import.meta.env.VITE_RAZORPAY_KEY_ID, 
+      key: "", 
       amount:order.amount,
       currency:order.currency,
       name:'Credits Payment',
@@ -91,7 +91,7 @@ const BuyCredit = () => {
        <p className='text-sm'>{item.desc}</p>
        <p className='mt-6'> <span className='text-3xl font-medium'> ${item.price} </span> / {item.credits} credits</p>
 
-     <button onClick={()=>paymentrazorpay(item.id)} className='w-full bg-gray-800 text-white mt-8 text-sm rounded-md py-2.5 min-w-52'>
+     <button className='w-full bg-gray-800 text-white mt-8 text-sm rounded-md py-2.5 min-w-52'>
 
       {user?'Purchase':'Get Started'}
   
