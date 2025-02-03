@@ -15,7 +15,7 @@ const BuyCredit = () => {
 
   const initpay = async (order)=>{
      const options = {
-      key: "", 
+      key: " ", 
       amount:order.amount,
       currency:order.currency,
       name:'Credits Payment',
